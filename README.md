@@ -2,10 +2,36 @@
 # Questions
 
 #### Difference between SuperVised and Unsupervised Learning?
-        Supervised learning is when you know the outcome and you are provided with the fully labeled outcome data while in unsupervised you are not 
-        provided with labeled outcome data. Fully labeled means that each example in the training dataset is tagged with the answer the algorithm should 
-        come up with on its own. So, a labeled dataset of flower images would tell the model which photos were of roses, daisies and daffodils. When shown 
-        a new image, the model compares it to the training examples to predict the correct label.
+        Supervised Learning:
+
+Imagine you're teaching a computer to recognize fruits. You have a basket of fruits, and each fruit is labeled with its name (e.g., apple, banana, and orange). This labeled dataset is like a cheat sheet for the computer.
+
+Supervised Learning Scenario:
+You show the computer an apple and say, "This is an apple."
+You show a banana and say, "This is a banana."
+You show an orange and say, "This is an orange."
+The computer learns by associating the fruits' features (color, shape, size) with their names.
+Now, if you show the computer a new fruit (e.g., a peach), it can tell you it's an "unknown fruit" because it doesn't have a label for peaches.
+In this case, the computer learned from labeled examples, and it can make predictions based on what it learned.
+
+Unsupervised Learning:
+
+Now, let's consider an unsupervised learning scenario without labels:
+
+Unsupervised Learning Scenario:
+You have a basket of mixed fruits, but this time, they are not labeled.
+The computer's task is to group these fruits into clusters based on their similarities.
+It doesn't know the names of the fruits; it just looks at their features (e.g., color, shape) and groups them based on those similarities.
+After analyzing the data, it might tell you that it found two main clusters: one with round fruits and another with elongated fruits.
+In this case, the computer didn't have the luxury of labeled examples. It had to find patterns or groupings on its own based solely on the data's characteristics.
+
+Summary:
+
+Supervised Learning relies on labeled data to learn patterns and make predictions based on those patterns.
+
+Unsupervised Learning works with unlabeled data to discover hidden patterns, group similar data points, or reduce the complexity of the data.
+
+In a nutshell, supervised learning is like learning from a teacher (with answers provided), while unsupervised learning is like exploring and finding patterns on your own when no answers are given in advance.
 ![](https://miro.medium.com/max/2800/0*Uzqy-gqZg77Wun0e.jpg)
 #### What is Reinforcment Learning and how would you define it?
         A learning differs from supervised learning in not needing labelled input/output pairs be presented, and in not needing sub-optimal actions to be 
@@ -15,21 +41,79 @@
 
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Reinforcement_learning_diagram.svg/250px-Reinforcement_learning_diagram.svg.png)
 #### What is Deep Learning ?
-        Deep learning is defined as algorithms inspired by the structure and function of the brain called artificial neural networks(ANN).Deep learning 
-        most probably focuses on Non Linear Analysis and is recommend for Non Linear problems regarding Artificial Intelligence.
+        
+        Deep learning is a type of machine learning that tries to mimic how our human brain works to solve complex problems. Here's a simple explanation:
+
+        Imagine you're trying to teach a computer to recognize cats in pictures. In traditional programming, you might write rules like "If the ears are pointy and the eyes are this shape, it's probably a cat." But with deep learning, you take a different approach.
+
+        Neural Networks: Deep learning uses something called neural networks. Think of these as virtual brains made of layers of interconnected "neurons."
+
+        Learning from Data: You feed a neural network lots of cat pictures. At first, it doesn't know anything about cats. But as it sees more and more cat pictures, it starts to learn patterns on its own, like the shape of cat ears and the color of fur.
+
+        Finding Patterns: The network keeps adjusting its connections between neurons to get better at recognizing cats. It's like a kid learning to ride a bike. At first, they wobble, but with practice, they get better.
+
+        Deep Learning: "Deep" in deep learning means you have many layers of neurons. These layers help the network learn complex patterns. The more layers you have, the deeper the learning.
+
+        Making Predictions: After a lot of training, the network can look at a new picture and confidently say, "Hey, I think this is a cat!" It's making predictions based on what it learned.
+
+        Deep learning is used for many things, like recognizing faces, understanding spoken language, and even driving cars. It's like teaching a computer to learn and make decisions on its own by finding and understanding patterns in data, just like our brain does when we learn to recognize things.
 
 #### Difference between Machine Learning and Deep Learning?	
-        Since DL is a subset of ML and both being subset of AI.While basic machine learning models do become progressively better at whatever their 
-        function is, they still need some guidance. If an AI algorithm returns an inaccurate prediction, then an engineer has to step in and make 
-        adjustments. With a deep learning model, an algorithm can determine on its own if a prediction is accurate or not through its own neural network.
+        Machine Learning (ML):
+
+        Definition: Machine learning is a subset of artificial intelligence (AI) where computers learn from data and make decisions or predictions based on that learning.
+
+        Example: Think of email spam detection. In traditional machine learning, you'd gather data about emails, like their content and sender, and label them as "spam" or "not spam." The machine learning algorithm would then learn from this labeled data to recognize patterns associated with spam emails.
+
+        Characteristics:
+
+        Feature Engineering: In ML, you often need to manually choose and design the features (like keywords in emails) that the algorithm uses for learning.
+        Algorithms: Various algorithms like decision trees, support vector machines, or random forests are used in machine learning.
+        Deep Learning (DL):
+
+        Definition: Deep learning is a subset of machine learning that specifically uses neural networks, which are inspired by the human brain's structure, to learn and make decisions from data.
+
+        Example: Let's take image recognition as an example. In deep learning, you'd feed a neural network lots of labeled images of cats and dogs. The network would automatically learn hierarchies of features from pixels (like edges, shapes, and textures) to recognize cats and dogs.
+
+        Characteristics:
+
+        Neural Networks: Deep learning exclusively uses neural networks, which consist of many interconnected layers of artificial neurons.
+        Automatic Feature Learning: Deep learning excels at automatically discovering relevant features from raw data, reducing the need for manual feature engineering.
+        Complex Patterns: It's particularly effective at handling complex tasks like image and speech recognition.
+        Summary:
+
+        In simple terms, all deep learning is machine learning, but not all machine learning is deep learning. Machine learning is a broader field that encompasses various algorithms for learning from data, while deep learning is a specific subset of machine learning that relies on neural networks to automatically learn and represent data features.
+
+        Think of machine learning as a toolbox with various tools, and deep learning as one of the advanced tools in that toolbox, especially suited for tasks where you have lots of data and complex patterns, like recognizing objects in images or understanding human speech.
 ![](https://lawtomated.com/wp-content/uploads/2019/04/MLvsDL.png)
 #### Difference between SemiSupervised and Reinforcment Learning?
+                Semi-Supervised Learning:
 
+        Definition: In semi-supervised learning, you have a mix of labeled (with correct answers) and unlabeled (without correct answers) data.
+        Goal: The algorithm learns from both the labeled and unlabeled data to make predictions or classifications.
+        Example: You have a dataset of customer reviews where some are labeled as positive or negative, but most are unlabeled. The algorithm learns from both labeled and unlabeled reviews to classify new reviews.
+        Reinforcement Learning:
+
+        Definition: Reinforcement learning is about training agents to make sequences of decisions in an environment to maximize a reward.
+        Goal: The algorithm learns by trial and error, receiving feedback in the form of rewards or penalties based on its actions.
+        Example: Teaching a robot to navigate a maze. It explores paths, receives rewards (positive for reaching the goal, negative for hitting walls), and learns the best way to navigate over time.
+        In summary, semi-supervised learning uses a mix of labeled and unlabeled data for supervised tasks, while reinforcement learning focuses on training agents to make sequential decisions to maximize rewards in interactive environments.
 #### Difference between Bias and Variance?
-        Bias is definned as over simpliciation assumption assumed by the model, 
-        Variance is definned as ability of a model to learn from Noise as well, making it highly variant.
-        There is always a tradeoff between these both, hence its recommended to find a balance between these two and always use cross validation to 
-        determine the best fit.
+        Bias:
+
+        Imagine: You're teaching a computer to recognize cats and dogs, but it always thinks everything is a cat.
+        Explanation: Bias is like the computer being overly biased towards cats. It can't tell the difference and keeps saying "cat" even when it's a dog.
+        In Machine Learning: High bias means your model is too simple to distinguish between cats and dogs. It underfits the data and is like always saying "cat."
+        Variance:
+
+        Imagine: You're teaching a computer to recognize cats and dogs, but it keeps changing its mind about what it's seeing, even for the same picture.
+        Explanation: Variance is like the computer being all over the place, sometimes saying "cat," sometimes "dog," even when shown the same picture multiple times.
+        In Machine Learning: High variance means your model is too complex and reacts too much to tiny details in the data. It overfits the data and can't make consistent predictions.
+        Summary:
+
+        Bias: Always says "cat," too simple, can't tell cats from dogs.
+        Variance: Says different things for the same picture, too complex, reacts to noise in the data.
+        In machine learning, you want to strike a balance between bias and variance, just like getting your computer to say "cat" for cats and "dog" for dogs, not more, not less.
 
 #### What is Linear Regressions ? How does it work?
         Fitting a Line in the respectable dataset when drawn to a plane, in a way that it actually defines the correlation between your dependent
