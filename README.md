@@ -1,28 +1,4 @@
 ## CrackingMachineLearningInterview
-
-These questions are guranteed to be asked in Machine Learning Engineer or ML based interviews for upto 80% of your job interviews.
-Make sure that you cover and know about machine learning. These questions can Ace your interviews regarding ML even 
-if you are a fresh graduate or upto 5 years of experience.
-##### Ultimate Machine Learning Engineer Interview Questions.
-Helpful for:
-* Machine Learning Engineer
-
-* Data Scientist
-
-* Deep Learning Engineer
-
-* AI Engineer
-
-* Software Development Engineer (focused on AI/ML)
-
-
-#### Images References
-* The Image references are only for Educational Purposes. These are totally made by the creators, specified in the reference.md file.
-
-#### Sharing is Caring:
-Feel Free to Share the Questions/References Link into your blog.
-
-
 # Questions
 
 #### Difference between SuperVised and Unsupervised Learning?
